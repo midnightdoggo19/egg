@@ -6,4 +6,4 @@ Architecture: all
 Maintainer: Midnight Doggo <git@midnightdoggo19.com>
 Description: Lets you know when long commands are done baking.
 Homepage: https://github.com/midnightdoggo19/egg
-package-type: deb
+
