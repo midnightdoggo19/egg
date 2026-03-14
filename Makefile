@@ -10,7 +10,7 @@ build: egg.sh
 
 	gzip --best -nk changelog.Debian
 
-	cp egg.sh egg/usr/bin/
+	cp egg.sh egg/usr/bin/egg
 	cp control egg/DEBIAN
 	cp changelog.Debian.gz egg/usr/share/doc/egg/
 	cp LICENSE egg/usr/share/doc/egg/copyright
