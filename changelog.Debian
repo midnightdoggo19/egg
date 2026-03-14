@@ -1,0 +1,23 @@
+commit 13a00f7905baac09306a757caf05c253bf6ab69c
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 16:07:03 2026 +0000
+
+    changed bash path
+
+:100755 100755 fcb7824 998bcd5 M	egg.sh
+
+commit ccb74fb888cec60e94ef5a198c5b8d9a825f9124
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 15:53:01 2026 +0000
+
+    license
+
+:000000 100644 0000000 edc53d9 A	LICENSE
+
+commit 5b7eacdd977fe8ee79074109294a07b0ceb438de
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 15:51:41 2026 +0000
+
+    initial commit
+
+:000000 100755 0000000 fcb7824 A	egg.sh
