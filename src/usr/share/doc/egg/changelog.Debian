@@ -1,3 +1,187 @@
+commit 80b53a1beb2d32ab1819e623bb43802c423b5f2d
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 20:20:38 2026 +0000
+
+    first release (1.0.0)
+
+:100644 100644 b6fa9fb 301f7df M	Makefile
+:100644 100644 011062e ce94c5e M	src/DEBIAN/control
+
+commit b0e1b4a96b6e3c46a0bd63c17ea2afaecb0bee12
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 20:18:26 2026 +0000
+
+    doing it the easy way
+
+:100644 100644 6ce671b 9b85b6b M	.github/workflows/make.yml
+
+commit c4707b250b5ba0142877bb0a16ca629512c53a69
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 20:15:38 2026 +0000
+
+    upload artifact
+
+:100644 100644 fb214d5 6ce671b M	.github/workflows/make.yml
+
+commit a4579d0fe8da20fec6c0ba17fc7647ae64a9c071
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 20:05:41 2026 +0000
+
+    replaced git whatchanged
+
+:100644 100644 1e311bc fb214d5 M	.github/workflows/make.yml
+
+commit e777c0e93f5a3dcf354b192f31f613e36e4466bb
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 20:04:29 2026 +0000
+
+    github action to assemble with make
+
+:000000 100644 0000000 1e311bc A	.github/workflows/make.yml
+
+commit b4396c5c9e3f380ac242cf111449128512970ae7
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 19:58:46 2026 +0000
+
+    remove symlink
+
+:120000 000000 30c81e2 0000000 D	changelog
+
+commit f04eb5e048ec83cabf4459ba9ab083a33381f07e
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 19:57:29 2026 +0000
+
+    symlinked changelog back to root
+
+:000000 120000 0000000 30c81e2 A	changelog
+
+commit 8fc2229bd3d35651c737384db4ddc05830d99f2a
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 19:57:15 2026 +0000
+
+    moved man page and changelog to src/
+
+:100644 100644 a994675 b6fa9fb M	Makefile
+:100644 100644 4c906cd 4c906cd R100	changelog.Debian	src/usr/share/doc/egg/changelog.Debian
+:100644 100644 9f22eba 9f22eba R100	egg.1	src/usr/share/man/man1/egg.1
+
+commit 03df6638b7827c5f32a9c305e43bf08215784f36
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 19:46:25 2026 +0000
+
+    reorganised (rather, created) directory structure
+
+:100644 100644 5f20faa f645847 M	.gitignore
+:100644 100644 d96646a a994675 M	Makefile
+:100644 100644 3bea11e 3bea11e R100	conffiles	src/DEBIAN/conffiles
+:100644 100644 011062e 011062e R100	control	src/DEBIAN/control
+:100644 100644 bf0d87a bf0d87a R100	egg.conf	src/etc/egg.conf
+:100755 100755 79c7219 79c7219 R100	egg.sh	src/usr/bin/egg.sh
+
+commit e2a4e18a879484e778ab19456a75bb2cd84891cd
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 19:22:49 2026 +0000
+
+    added "configuration"
+
+:100644 100644 0a819e1 d96646a M	Makefile
+:000000 100644 0000000 bf0d87a A	egg.conf
+:100755 100755 998bcd5 79c7219 M	egg.sh
+
+commit ab0d08c2a18fb71e8d45fa8abbcc08673855a3ea
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 19:12:14 2026 +0000
+
+    updated permissions for directories
+
+:100644 100644 e8630d0 0a819e1 M	Makefile
+
+commit 75599077894731f2634dda78236b5033354d6e74
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 18:30:21 2026 +0000
+
+    add conffiles to package
+
+:100644 100644 d560475 e8630d0 M	Makefile
+
+commit 2b465ad16a43ccda162f156d85728a0975e67b6a
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 18:15:53 2026 +0000
+
+    readme
+
+:000000 100644 0000000 1cd136c A	README.md
+
+commit 2c3a78ae9aa793f42bff2a03c7a500aa0ba49a20
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 18:14:30 2026 +0000
+
+    updated version to 0.0.0
+
+:100644 100644 fa48263 d560475 M	Makefile
+:100644 100644 cd296c8 011062e M	control
+
+commit cb15639fd496d8ce9f0a352ec5f14eb28be24d5d
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 18:14:15 2026 +0000
+
+    added man page and configration file
+
+:100644 100644 7103d86 fa48263 M	Makefile
+:000000 100644 0000000 3bea11e A	conffiles
+:000000 100644 0000000 9f22eba A	egg.1
+
+commit c2896c66bb35b024dcc65197835bfd7c1ae55234
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 18:01:06 2026 +0000
+
+    removed package type as it'll default anyway
+
+:100644 100644 4430f88 cd296c8 M	control
+
+commit ebc560464aab9d5a7d5310b6c21ee2e4ee4d5798
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 18:00:37 2026 +0000
+
+    added better error handling and compliance to makefile
+
+:100644 100644 fcc6d5c 7103d86 M	Makefile
+
+commit 284c4ef6e5e99d1b38346bc13e1946cb248fba8a
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 16:23:38 2026 +0000
+
+    clean package
+
+:100644 100644 a6d7f89 fcc6d5c M	Makefile
+
+commit e3dd02518e1043bfe308b59c2a471faa5e384faa
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 16:22:11 2026 +0000
+
+    change name of final executable
+
+:100644 100644 067fa84 a6d7f89 M	Makefile
+
+commit 388b053f1a4cc789ebe02ecf1582e924503d5d21
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 16:21:11 2026 +0000
+
+    change default make target
+
+:100644 100644 c8cd2c9 067fa84 M	Makefile
+
+commit 657903013af5f41d57e1375a32743fd47f45b247
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 16:18:08 2026 +0000
+
+    added deb assembly
+
+:000000 100644 0000000 5f20faa A	.gitignore
+:000000 100644 0000000 c8cd2c9 A	Makefile
+:000000 100644 0000000 4c906cd A	changelog.Debian
+:000000 100644 0000000 4430f88 A	control
+
 commit 13a00f7905baac09306a757caf05c253bf6ab69c
 Author: Midnight Doggo <git@midnightdoggo19.com>
 Date:   Sat Mar 14 16:07:03 2026 +0000
