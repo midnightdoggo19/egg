@@ -22,5 +22,5 @@ jobs:
 
     - uses: actions/upload-artifact@v4
       with:
-        name: $VERSION
-        path: egg-v$VERSION.deb
+        name: dump
+        path: egg-v*.deb
