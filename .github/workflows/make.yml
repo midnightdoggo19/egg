@@ -1,0 +1,21 @@
+name: Assemble
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Changelog
+      run: git whatchanged --all > src/usr/share/doc/egg/changelog.Debian
+
+    - name: Assemble w/ Make
+      run: make clean assemble
