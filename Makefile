@@ -15,6 +15,7 @@ build: egg.sh
 	cp changelog.Debian.gz egg/usr/share/doc/egg/changelog.gz
 	cp LICENSE egg/usr/share/doc/egg/copyright
 	cp egg.1.gz egg/usr/share/man/man1/
+	cp conffiles egg/DEBIAN
 
 	touch egg/etc/egg.conf
 
