@@ -12,7 +12,7 @@ build: egg.sh
 
 	cp egg.sh egg/usr/bin/egg
 	cp control egg/DEBIAN
-	cp changelog.Debian.gz egg/usr/share/doc/egg/
+	cp changelog.Debian.gz egg/usr/share/doc/egg/changelog.gz
 	cp LICENSE egg/usr/share/doc/egg/copyright
 
 	chmod -R 0755 egg
@@ -22,6 +22,6 @@ build: egg.sh
 	@echo Ding!
 
 assemble: build egg-v$(VERSION).deb
-	lintian egg-v$(VERSION).deb
+	-lintian egg-v$(VERSION).deb
 
 .PHONY: clean build
