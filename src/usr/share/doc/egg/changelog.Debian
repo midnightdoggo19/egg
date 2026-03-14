@@ -1,3 +1,30 @@
+commit d21abcb12cd5b57cc82925846611d29b36a592d4
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 20:35:54 2026 +0000
+
+    added support for multiword arguments
+
+:100644 100644 301f7df 0b2e072 M	Makefile
+:100644 100644 d1054ce d0e2746 M	src/DEBIAN/control
+:100755 100755 79c7219 35d5866 M	src/usr/bin/egg.sh
+
+commit 73c81d48ea4244af5936e3df9e27753b1294d803
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 20:27:11 2026 +0000
+
+    realised the README made no sense
+
+:100644 100644 1cd136c fea4ade M	README.md
+:100644 100644 ce94c5e d1054ce M	src/DEBIAN/control
+
+commit 1661a6fd6e46a61aca89a9b743f935a105e581d7
+Author: Midnight Doggo <git@midnightdoggo19.com>
+Date:   Sat Mar 14 20:21:53 2026 +0000
+
+    update changelog (1.0.0)
+
+:100644 100644 4c906cd a4401d0 M	src/usr/share/doc/egg/changelog.Debian
+
 commit 80b53a1beb2d32ab1819e623bb43802c423b5f2d
 Author: Midnight Doggo <git@midnightdoggo19.com>
 Date:   Sat Mar 14 20:20:38 2026 +0000
