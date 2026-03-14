@@ -1,0 +1,27 @@
+.Dd 14/4/2026
+.Dt Egg
+.Os Debian
+.Sh NAME
+.Nm egg
+.Nd Lets you know when long commands are done baking.
+.Sh SYNOPSIS
+.Nm
+.Op command
+.Sh DESCRIPTION
+.Nm
+uses a combination of the time command and BEL character to alert you to how
+long a command's taken to run. Runs with Bash.
+.Pp
+.Sh FILES
+.Bl -tag -compact
+.It Pa /etc/egg.conf
+Configuration for the default number of beeps to play.
+.El
+.Sh SEE ALSO
+.Ar time (1)
+.Sh BUGS
+This thing's more makefile than programme, but, if by some miracle it does break, file a report at https://github.com/midnightdoggo19/egg/issues.
+.Sh AUTHOR
+Written by Midnight Doggo <git@midnightdoggo19.com>.
+.Sh COPYRIGHT
+Copyright information is availbile in /usr/share/doc/egg/copyright.
