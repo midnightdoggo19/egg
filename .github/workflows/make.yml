@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Changelog
-      run: git whatchanged --all > src/usr/share/doc/egg/changelog.Debian
+      run: git log --raw --no-merges --all > src/usr/share/doc/egg/changelog.Debian
 
     - name: Assemble w/ Make
       run: make clean assemble
