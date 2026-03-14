@@ -6,7 +6,7 @@ clean:
 	-rm -r egg *.gz egg-v$(VERSION).deb
 
 build: egg.sh
-	mkdir -vp egg/DEBIAN egg/usr/bin egg/usr/share/doc/egg/ egg/usr/share/man/man1/ egg/etc
+	mkdir -vpm 755 egg/DEBIAN egg/usr/bin egg/usr/share/doc/egg/ egg/usr/share/man/man1/ egg/etc
 
 	gzip --best -nk changelog.Debian egg.1
 
@@ -18,8 +18,6 @@ build: egg.sh
 	cp conffiles egg/DEBIAN
 
 	touch egg/etc/egg.conf
-
-	chmod -R 0755 egg
 
 	dpkg-deb --root-owner-group --build egg
 	mv egg.deb egg-v$(VERSION).deb
