@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-time $1
+time $@
 
 for (( i = 0; i <= $(< /etc/egg.conf); i++ ))
 do
