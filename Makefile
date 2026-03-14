@@ -8,11 +8,13 @@ clean:
 build: src/
 	cp -vr src/ build
 
-	gzip --best -nk changelog.Debian egg.1
+	gzip --best -nk build/usr/share/doc/egg/changelog.Debian build/usr/share/man/man1/egg.1
 
-	mv changelog.Debian.gz build/usr/share/doc/egg/changelog.gz
 	cp LICENSE build/usr/share/doc/egg/copyright
-	mv egg.1.gz build/usr/share/man/man1/
+
+	mv build/usr/share/doc/egg/changelog.Debian.gz build/usr/share/doc/egg/changelog.gz
+	rm build/usr/share/doc/egg/changelog.Debian build/usr/share/man/man1/egg.1
+
 	mv build/usr/bin/egg.sh build/usr/bin/egg
 
 	dpkg-deb --root-owner-group --build build
