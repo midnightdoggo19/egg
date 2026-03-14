@@ -16,8 +16,7 @@ build: egg.sh
 	cp LICENSE egg/usr/share/doc/egg/copyright
 	cp egg.1.gz egg/usr/share/man/man1/
 	cp conffiles egg/DEBIAN
-
-	touch egg/etc/egg.conf
+	cp egg.conf egg/etc/egg.conf
 
 	dpkg-deb --root-owner-group --build egg
 	mv egg.deb egg-v$(VERSION).deb
