@@ -19,3 +19,8 @@ jobs:
 
     - name: Assemble w/ Make
       run: make clean assemble
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: $VERSION
+        path: egg-v$VERSION.deb
