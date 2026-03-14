@@ -3,7 +3,7 @@ VERSION := 0
 all: assemble
 
 clean:
-	-rm -r egg changelog.Debian.gz
+	-rm -r egg changelog.Debian.gz egg-v$(VERSION).deb
 
 build: egg.sh
 	mkdir -vp egg/DEBIAN egg/usr/bin egg/usr/share/doc/egg/
