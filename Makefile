@@ -1,6 +1,6 @@
 VERSION := 0
 
-all: build
+all: assemble
 
 clean:
 	-rm -r egg changelog.Debian.gz
@@ -13,6 +13,7 @@ build: egg.sh
 	cp egg.sh egg/usr/bin/
 	cp control egg/DEBIAN
 	cp changelog.Debian.gz egg/usr/share/doc/egg/
+	cp LICENSE egg/usr/share/doc/egg/copyright
 
 	chmod -R 0755 egg
 
